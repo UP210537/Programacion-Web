@@ -1,0 +1,38 @@
+* {
+    background-color: #15202B;
+    color: #ffffff;
+}
+
+a {
+    color: rgb(29, 161, 242);
+    text-decoration: none;
+}
+img, svg{
+    max-width: 100%;
+    max-height: auto;
+}
+.svg{
+    max-width: 100%;
+    max-height: auto;
+}
+.textGrey {
+    color: #515B69;
+}
+.container{
+    border: solid white;
+    width: 650px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.tweet-body{
+    grid-column: 1/13;
+    grid-row: 1/11;  
+    display: grid;
+    grid-template-columns: 50px, 1fr;
+}
+.tweet-icons{
+    grid-column: 1/13;
+    grid-row: 11/13;
+}
