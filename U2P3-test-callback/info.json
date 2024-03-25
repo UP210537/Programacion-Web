@@ -1,0 +1,14 @@
+{
+    "usuarios": [
+        { 
+            "name": "Nelly :D",
+            "years": 20,
+            "live": true
+        },
+        {
+            "name": "Eliseo :D",
+            "years": 21,
+            "live": false
+        }
+    ]
+}

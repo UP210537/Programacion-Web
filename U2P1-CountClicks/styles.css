@@ -1,0 +1,95 @@
+:root {
+    /*Colores*/
+    --primary-color: #2F7BFF;
+    --secondary-color: #FFAC54;
+    --white-color:#F1F1F1;
+    --black-color: #2C2B2B;
+    /*Tamaño de la fuente*/
+    --font-size: 18px; /*de aqui toma el rem, el tamaño del elemento*/
+}
+
+*{
+    margin: 0;      
+    padding: 0;
+    font-size: var(--font-size);
+    box-sizing: border-box;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*la primera fuente define la fuente de nuestro sistema*/
+}
+
+button:active {
+    opacity: 0.7; /*degrada o aumenta la opacidad de mi elemento*/
+}
+
+body {
+    min-height: 100vh; /*el minimo siempre sera el tamaño completo de mi pantalla/vista*/
+    background-color: var(--black-color);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: var(--white-color);
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr; /*definir cantidad de columnas y de filas*/
+    grid-template-rows: repeat(5, 1f);
+    grid-template-areas: 
+    "cardInfo"
+    "cardInfo"
+    "cardInfo"
+    "cardInfo"
+    "cardButtons";
+}
+
+.cardInfo {
+    grid-area: cardInfo;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardInfo p, 
+.cardInfo p span {
+    font-size: 2rem;
+}
+
+
+.cardButtons {
+    grid-area: cardButtons;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn {
+    padding: 0.5rem 1rem; /*uno es de x y otro de y*/
+    border-radius: 5px;
+    border:  none;
+    color: var(--white-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+}
+
+.btn-reset {
+    background-color: var(--black-color);
+}

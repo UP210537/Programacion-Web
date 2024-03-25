@@ -1,0 +1,124 @@
+<!-- Top mas alto de mis etiquetas html -->
+<html> <!-- Siempre es la primera etiqueta -->
+    <!-- Sus dos hijas: head y body -->
+    <head> <!-- Lo que ponga dentro de esta etiqueta no se ve con el usuario Es para linkear cualquier cosa-->
+        <title>My first app</title> <!-- Es el titulo de mi aplicacion -->
+        <!-- Azul: atributo rel: le da info al navegador referente a mi pagina -->
+        <link rel="shortcut icon" href="TwLogo.png" type="image/x-icon">
+    </head>
+    <body> <!-- lo que sí ve el usuario -->
+        <p>Hola mundo</p> <!-- Indico que es un parrafo (da un salto de linea)-->
+        <p>Este es otro parrafo</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores incidunt officiis est beatae quos sapiente voluptas mollitia. Asperiores hic, labore nostrum vel ratione assumenda ducimus aliquid nemo repudiandae veniam laboriosam.
+        Sunt ratione repellendus recusandae? Pariatur dicta nobis reprehenderit facere minus. Excepturi reiciendis adipisci aut veritatis recusandae. Dicta rerum odio accusantium, laboriosam nisi harum, itaque temporibus odit sunt dolorem iure repellat.</p> 
+        <!-- lorem*numero: Texto aleatorio del numero que indiques -->
+        <p>Baño</p>
+    <!--Titulos -->
+    <h1>Hol</h1>
+    <h2>cnkas</h2>
+    <h3>ncjsankjl</h3>
+
+    <!-- Contenido -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+        
+        elit. Omnis nemo soluta veniam eveniet repellendus deserunt, <br /> <!-- Con esto hacemos el salto de linea -->
+        
+        fugiat assumenda itaque ipsa vero enim asperiores sunt quia nisi dicta corporis. Dolores, qui placeat.
+    
+        Nisi reprehenderit deserunt pariatur dicta aspernatur dignissimos dolorum eaque veniam architecto voluptatem, praesentium sunt! Voluptate dolore autem vel ullam voluptas? Iste aliquid unde dicta at neque inventore hic tenetur ad?</p>
+        <!-- En la pagina no se vera asi como lo pongas tu, porque es un parrafo entero -->
+            
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+        
+            elit. Omnis nemo soluta veniam eveniet repellendus deserunt, <br /> <!-- Con esto hacemos el salto de linea -->
+            
+            fugiat assumenda itaque ipsa vero enim asperiores sunt quia nisi dicta corporis. Dolores, qui placeat.
+        
+            Nisi reprehenderit deserunt pariatur dicta aspernatur dignissimos dolorum eaque veniam architecto voluptatem, praesentium sunt! Voluptate dolore autem vel ullam voluptas? Iste aliquid unde dicta at neque inventore hic tenetur ad?</p>
+        <hr> <!-- Genera una pequeña linea -->    
+        <h1>This is a title</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, totam voluptas dolore, necessitatibus perspiciatis, culpa minima sint accusantium eos atque amet. Magnam libero reiciendis eum maiores nisi quibusdam, suscipit aut?</p>
+        <!-- Listas 
+            Listas ordenandas: tiene una numeracion (abc,1234)-->
+            <ol>
+                <li> <!-- para señalar que es UNA sola cosa de la lista, se debe poner un li en cada item que pongas-->
+                    papas
+                </li>
+                <li>churros</li>
+                <li>frescas verdes</li>
+                <li>helado</li>
+            </ol>
+            <!--Lista desordenada-->
+            <ul>
+                <li>papas</li>
+                <li>churros</li>
+                <li>frescas verdes</li>
+                <li>helado</li>
+            </ul>
+            <!-- Contenido -->
+            <p><b>lorem</b><!-- la b es para ponerla en negritas-->, ipsum dolor sit amet 
+                consectetur <strong>adipisicing</strong> <!-- otra forma de hacerlo negritas --> elit. 
+                Deleniti ullam <span>ratione recusandae</span> 
+                <!-- secciono una parte de mi doc de TEXTO y lo pondre en una nueva seccion. Ej. cuando quiero que se haga de otra forma la letra, etc.--> id nostrum cum reprehenderit, a facere praesentium, 
+                corrupti officiis reiciendis quibusdam suscipit deserunt quis placeat ipsum cumque nam.
+            </p>
+            <!--Etiqueta a
+            Linkearte o mandarte a donde tu quieras en este caso, documentos html. -->
+            <p>
+                Hola, esto te mande a Google.com, da clic <a href="https://www.google.com">aqui</a> <!-- href es para decirle a donde tiene que ir-->
+                <!-- La URL es el http://google.com/algo/#Mum Se ocupa cuando queremos hacer algo externo de nuestro proyecto
+                    La URI es lo restante el /algo/#Mum este se ocupa cuando queremos hacer algo dentro de nuestro proyecto-->
+            </p>
+            <p>
+                Hola, esto se encuentra en mi carpeta <a href="/hola.html">aqui</a>
+                <!-- No funciona debido a que debo indicarle a donde me tengo que ir pero desde mi servidor web.
+                Por ello, debemos meter la carpeta en htdocs
+                -->
+            </p>
+            <p>
+                Hola, esto se encuentra en mi carpeta <a href="hola.html">aqui</a>
+                <!--
+                Cuando se meta todo el codigo al servidor web, si debe funcionar con el /, pq si se lo quitamos si jala 
+                pero pq estamos en nuestra compu
+                -->
+            </p>
+            <div> <!-- Genera una seccion o parte que yo quiero seccionar de algo-->
+                     <!-- Es como el span pero este es para CONTENIDO-->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur perferendis nihil labore cumque ipsum dolorum unde velit maiores, 
+                    placeat modi doloribus ipsam ducimus, ipsa fugit fuga sit et! Dolore, doloribus?
+                </p>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Non beatae sint inventore obcaecati culpa asperiores illo repellendus modi hic praesentium id incidunt eos, 
+                        possimus aliquid amet? Repellat ratione quod quaerat?
+                    </p>
+                </div>
+            </div>
+            <!--Elementos de formulario-->
+            <form> <!-- que son un formulario o algo que quiero realizar, entonces le tengo que decir a donde los quiero enviar-->
+                <!-- todo formulario que se envia es por un boton-->
+                <input type="text" /> <br>
+                <input type="button"> <!-- ctrl+espacio-->
+                <input type="button" value="Send!!"> <!--ponerle texto al boton. No es recomendable el input para ello es mejor...-->
+                <button>Send!!</button> <!--Es mejor debido a que cuando quieras poner un valor ya no se podra porque ya tienes el texto ahi--> <br>
+                <input type="checkbox" name="" id=""> <br>
+                <input type="color" /> <!-- selecciono un color--> <br>
+                <input type="date"/> <br>
+                <input type="datetime">
+
+                <input type="submit" /> <br>
+                
+                <!-- si yo quiero mandar datos u obtener un valor-->
+                <input type="text"name="nombre" /> <button>Send</button> <br>
+                <select name="Activity"> 
+                    <!-- Etiqueta de tipo formulario que nos permite seleccionar de un conjunto de datos-->
+                    <option value="1">Leer</option>
+                    <option value="2">correr</option>
+                </select> 
+        </form>
+    </body>
+</html>
